@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/main.css" />
+    <link rel="stylesheet" href="style/responsive.css" />
+    <link rel="stylesheet" href="style/images.css" />
+    <!--OWL CSS/BOOTSTRAP-->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
+    <!----JQUERRYEBOTSTRAP------>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/@popperjs/core@2"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <title>ANIMEFLIX</title>
+    <link rel="icon" type="image/x-icon" href="/img/A.png" />
+
+  </head>
+  <body>
+    <header>
+      <nav class="container-fluid">
+        <div class="navegacao-principal">
+          <a class="logo" href="../index.html">ANIMEFLIX</a>
+          <div class="navegacao">
+            <a href="../lancamentos.html">Lançamentos</a>
+            <a href="../animes.html">Animes</a>
+            <a href="../filmes.html">Filmes</a>
+            <a href="../minhalista.html">Minha lista</a>
+          </div>
+        </div>
+        <div class="navegacao-user">
+          <div class="search-box">
+            <input
+              type="text"
+              class="search-txt"
+              name=""
+              placeholder="título, gênero..."
+            />
+            <a class="search-btn" href="#">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton2"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-user"></i>
+              </button>
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="dropdownMenuButton2"
+              >
+                <li>
+                  <a class="dropdown-item" href="#">Gerenciar Perfil</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Minha Conta</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Ajuda</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Sair</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="filme-principal">
+        <div class="container-fluid">
+          <img src="/img/spyxfamily-logo.png" alt="" />
+          <p class="descricao">
+            O habilidoso espião “Twilight” é instruído a construir uma “família”
+            para se infiltrar em uma tradicional instituição de ensino. Mas a
+            “filha” que ele encontra é uma paranormal que lê mentes! E a
+            “esposa” é uma assassina?!
+          </p>
+          <div class="botoes">
+            <button role="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaltrailer">
+              <i class="fa-solid fa-play"></i>ASSISTIR
+            </button>
+            <button
+              role="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#modalanime"
+            >
+              <i class="fa-solid fa-circle-info"></i>MAIS INFORMAÇÕES
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Modal-->
+
+    <div class="modal fade" id="modalanime">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img src="/img/spyxfamily-logo.png" alt="">
+            <div class="botoes">
+              <button role="button" class="btn" data-bs-toggle="modal" data-bs-target="#modaltrailer">
+                <i class="fa-solid fa-play"></i>ASSISTIR
+              </button>
+              <button role="button" class="btn btn-circle"><i class="fa-solid fa-plus"></i></button>
+              <button role="button" class="btn btn-circle"><i class="fa-solid fa-thumbs-up"></i></button>
+              <button role="button" class="btn btn-circle"><i class="fa-solid fa-thumbs-down"></i></button>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+            <div class="col-7">
+             <div class="infos">
+               <p>2022</p>
+               <p class="classificacao">16</p>
+               <p>1 temporada</p>
+             </div>
+             <div class="anime-sinopse">
+               <p>O habilidoso espião “Twilight” é instruído a construir uma “família” para se infiltrar em uma tradicional instituição de ensino. Mas a “filha” que ele encontra é uma paranormal que lê mentes! E a “esposa” é uma assassina?!</p>
+             </div>
+              </div>
+              <div class="col-5">
+                <p class="anime-elenco">
+                 <br>
+                  <br>
+                  Elenco: <text>Takuya Eguchi, Atsumi Tanezaki, Saori Hayami, Kenichirou Matsuda</text>
+                  <br>
+                  <br>
+                  Gênero: <text>Comédia, Action & Adventure, Crime</text>
+                </p>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col-7">
+                <h3>Episódios</h3>
+              </div>
+              <div class="col-5 text-rigth">
+                <select class="form-control">
+                  <option>Temporada 1</option>
+                </select>
+              </div>
+              <br>
+              <div class="row">
+                <ul class="lista-episodios">
+                  <li>
+                    <div class="row">
+                      <div class="col-1">
+                        <h3>1</h3>
+                      </div>
+                      <div class="col-4">
+                        <img class="img-fluid" src="/img/spyxfamilyEP1.jpg" alt="">
+                      </div>
+                      <div class="col-7">
+            
+                        <h6><b>Operação "Strix"</b></h6>
+                        <p>Twilight, codinome do melhor agente de espionagem de Westalis, recebe sua nova missão: fazer seu filho entrar no prestigioso Colégio Éden para se aproximar de Donovan Desmond, do Partido da União Nacional. Primeira meta: obter um filho.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-1">
+                        <h3>2</h3>
+                      </div>
+                      <div class="col-4">
+                        <img class="img-fluid" src="/img/spyxfamilyEP2.jpg" alt="">
+                      </div>
+                      <div class="col-7">
+                        <h6><b>Garantir uma esposa</b></h6>
+                        <p>Yor Briar é uma funcionária pública na prefeitura de Berlint e, ocasionalmente, assassina profissional. Recentemente, várias mulheres solteiras se aproximando dos 30 anos estão sendo denunciadas como espiãs, então, para tranquilizar seu irmão, Yor diz que está namorando.</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="row">
+                      <div class="col-1">
+                        <h3>3</h3>
+                      </div>
+                      <div class="col-4">
+                        <img class="img-fluid" src="/img/spyxfamilyEP3.jpg" alt="">
+                      </div>
+                      <div class="col-7">
+                        <h6><b>Preparativos para a entrevista</b></h6>
+                        <p>Yor se muda para a casa de Loid e Anya, e o disfarce de família está completo. Agora Loid começa a preparar as duas para a entrevista, mas nem a Anya ou Yor parecem prontas para a etapa seguinte da missão...</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Modal-trailer-->
+
+    <div class="modal fade " id="modaltrailer">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-container">
+            <div class="row">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/0CJr6AfE2rY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--carrossel-->
+    <div class="carrossel-animes">
+      <div class="lancamentos">
+        <p>Lançamentos</p>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="image honzuki"></div>
+          </div>
+          <div class="item">
+            <div class="image kawaii-dake"></div>
+          </div>
+          <div class="item">
+            <div class="image komi-san"></div>
+          </div>
+          <div class="item">
+            <div class="image otome-game"></div>
+          </div>
+          <div class="item">
+            <div class="image papiri-koumei"></div>
+          </div>
+          <div class="item">
+            <div class="image shijou-saikyou"></div>
+          </div>
+          <div class="item">
+            <div class="image spyxfamily"></div>
+          </div>
+          <div class="item">
+            <div class="image summer-time"></div>
+          </div>
+          <div class="item">
+            <div class="image tate-no-yuusha"></div>
+          </div>
+          <div class="item">
+            <div class="image tomodachi-game"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filmes">
+        <p>Filmes</p>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="image filme01"></div>
+          </div>
+          <div class="item">
+            <div class="image filme02"></div>
+          </div>
+          <div class="item">
+            <div class="image filme03"></div>
+          </div>
+          <div class="item">
+            <div class="image filme04"></div>
+          </div>
+          <div class="item">
+            <div class="image filme05"></div>
+          </div>
+          <div class="item">
+            <div class="image filme06"></div>
+          </div>
+          <div class="item">
+            <div class="image filme07"></div>
+          </div>
+          <div class="item">
+            <div class="image filme08"></div>
+          </div>
+          <div class="item">
+            <div class="image filme09"></div>
+          </div>
+          <div class="item">
+            <div class="image filme10"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="comedia">
+        <p>Comédia</p>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="image comedia01"></div>
+          </div>
+          <div class="item">
+            <div class="image comedia02"></div>
+          </div>
+          <div class="item">
+            <div class="image comedia03"></div>
+          </div>
+          <div class="item">
+            <div class="image comedia04"></div>
+          </div>
+          <div class="item">
+            <div class="image comedia05"></div>
+          </div>
+          <div class="item">
+            <div class="image comedia06"></div>
+          </div>
+          <div class="item">
+            <div class="image comedia07"></div>
+          </div>
+          <div class="item">
+            <div class="image comedia08"></div>
+          </div>
+          <div class="item">
+            <div class="image comedia09"></div>
+          </div>
+          <div class="item">
+            <div class="image comedia10"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="acao-aventura">
+        <p>Ação/Aventura</p>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="image aventura01"></div>
+          </div>
+          <div class="item">
+            <div class="image aventura02"></div>
+          </div>
+          <div class="item">
+            <div class="image aventura03"></div>
+          </div>
+          <div class="item">
+            <div class="image aventura04"></div>
+          </div>
+          <div class="item">
+            <div class="image aventura05"></div>
+          </div>
+          <div class="item">
+            <div class="image aventura06"></div>
+          </div>
+          <div class="item">
+            <div class="image aventura07"></div>
+          </div>
+          <div class="item">
+            <div class="image aventura08"></div>
+          </div>
+          <div class="item">
+            <div class="image aventura09"></div>
+          </div>
+          <div class="item">
+            <div class="image aventura10"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fantasia">
+        <p>Fantasia</p>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="image fantasia01"></div>
+          </div>
+          <div class="item">
+            <div class="image fantasia02"></div>
+          </div>
+          <div class="item">
+            <div class="image fantasia03"></div>
+          </div>
+          <div class="item">
+            <div class="image fantasia04"></div>
+          </div>
+          <div class="item">
+            <div class="image fantasia05"></div>
+          </div>
+          <div class="item">
+            <div class="image fantasia06"></div>
+          </div>
+          <div class="item">
+            <div class="image fantasia07"></div>
+          </div>
+          <div class="item">
+            <div class="image fantasia08"></div>
+          </div>
+          <div class="item">
+            <div class="image fantasia09"></div>
+          </div>
+          <div class="item">
+            <div class="image fantasia10"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="misterio">
+        <p>Mistério</p>
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="image misterio01"></div>
+          </div>
+          <div class="item">
+            <div class="image misterio02"></div>
+          </div>
+          <div class="item">
+            <div class="image misterio03"></div>
+          </div>
+          <div class="item">
+            <div class="image misterio04"></div>
+          </div>
+          <div class="item">
+            <div class="image misterio05"></div>
+          </div>
+          <div class="item">
+            <div class="image misterio06"></div>
+          </div>
+          <div class="item">
+            <div class="image misterio07"></div>
+          </div>
+          <div class="item">
+            <div class="image misterio08"></div>
+          </div>
+          <div class="item">
+            <div class="image misterio09"></div>
+          </div>
+          <div class="item">
+            <div class="image misterio10"></div>
+          </div>
+        </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/c2d7b1344e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+  </body>
+</html>

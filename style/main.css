@@ -1,0 +1,321 @@
+:root{
+  --vermelho: #e50914;
+  --preta:#141414;
+  --preta1:rgba(0,0,0,.50);
+  --cinza: rgb(210, 207, 207);
+}
+
+*{margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: var(--preta);
+  font-family: 'Arial', Times, serif;
+  color: white;
+}
+ 
+header i {
+  color: white;
+}
+header a{
+  text-decoration: none;
+}
+
+header nav{
+  background:var(--preta);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav .navegacao-principal{
+  display: flex;
+  align-items: center;
+}
+
+header nav .navegacao-principal .logo{
+  color: var(--vermelho);
+  font-family: 'Arial Black', 'Times New Roman', Times, serif;
+  font-size: 40px;
+  margin-right: 40px;
+}
+
+header nav .navegacao-principal .navegacao a{
+  color: var(--cinza);
+  margin-right: 10px;
+}
+
+header nav .navegacao-principal .navegacao a:hover{
+  color: white;
+}
+
+header nav .navegacao-user{
+  display: flex;
+  color: var(--cinza);
+  align-items: center;
+}
+
+header nav .search-box{
+  background:rgba(255, 255, 255, 0.117);
+  border: solid 1px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+ 
+header nav .navegacao-user .search-txt{
+  float: left;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  color: white;
+  font-size: 16px;
+}
+
+header nav .dropdown button{
+  border: none;
+  background: none;
+  
+  width: 15px;
+  margin-left: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .filme-principal{
+  background: url(/img/spyxfamily.jpg);
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display:flex;
+  align-items: center;
+}
+
+main .filme-principal::after{
+  content: '';
+  width: 80%;
+  height: 500px;
+  display: block;
+  background: linear-gradient(to left, rgba(23, 23, 23, 0) 10%, #141414 100%);
+  position: absolute;
+  top: 60px;
+}
+
+main .filme-principal .container-fluid{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  z-index: 1;
+  margin-left: 40px;
+}
+
+main .filme-principal img{
+  position: relative;
+  width: 180px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+main .filme-principal p{
+  text-align: justify;
+  width: auto;
+}
+
+/*BTN*/
+
+.btn{
+  background-color:var(--preta1);
+  color: white;
+  border-radius: 10px 10px;
+
+  padding: 15px 20px;
+  margin-right: 5px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .3s ease all;
+}
+
+.btn:hover{
+  background-color: white;
+  color: var(--preta);
+}
+
+.btn i{
+  margin-right: 5px;
+}
+
+.btn-circle{
+  border-radius: 50%;
+  padding: 10px 14px;
+}
+
+.btn-circle i{
+  margin: 0;
+}
+
+/*modal*/
+
+#modalanime .modal-dialog, .modal-content{
+  background: var(--preta);
+}
+
+.modal-dialog{
+  max-width: 800px;
+}
+
+#modalanime .modal-header{
+  height: 350px;
+  background: url('/img/spyxfamily.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: none;
+}
+
+#modalanime .modal-header::after{
+  content: '';
+  width: 100%;
+  height: 350px;
+  display: block;
+  background: linear-gradient(180deg, rgba(23, 23, 23, 0) 0%, #141414 100%);
+  position: absolute;
+  left: 0;
+  z-index: 1;
+}
+
+#modalanime .modal-header img{
+  width: 170px;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+#modalanime .modal-header .botoes{
+  position: relative;
+  z-index: 2;
+}
+
+#modalanime .modal-body{
+  padding-left:  40px;
+  padding-right: 40px;
+}
+
+#modalanime .modal-body .infos{
+display: flex;
+justify-content: flex-start;
+position: relative;
+z-index: 2;
+}
+
+#modalanime .modal-body .infos p{
+  margin: 10px;
+}
+
+
+#modalanime .modal-body .infos .classificacao{
+  background-color: rgb(213, 43, 34);
+ width: 23px;
+ height: 23px;
+ border-radius: 5px;
+ text-align: center;
+}
+
+#modalanime .modal-body .anime-sinopse{
+  text-align: justify;
+  font-size: 15px;
+  
+}
+
+#modalanime .modal-body .anime-elenco{
+  text-align: justify;
+  font-size: 13px;
+  color: #AAA;
+}
+
+#modalanime .modal-body .anime-elenco text{
+  color: white;
+}
+
+#modalanime .modal-body .lista-episodios{
+ list-style: none;
+}
+
+#modalanime .modal-body .lista-episodios li{
+  padding-top: 10px;
+}
+#modalanime .modal-body .lista-episodios li:hover{
+  cursor: pointer;
+  background: rgba(255,255,255,0.05)
+}
+#modalanime .modal-body .lista-episodios h3{
+  text-align: center;
+}
+
+#modalanime .modal-body .lista-episodios p{
+  font-size: 13px;
+  text-align: justify;
+  padding: 10px;
+}
+
+#modaltrailer .modal-container{
+  background: transparent;
+}
+
+#modaltrailer .modal-container iframe{
+  height: 500px;
+}
+
+.carrossel-animes {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.carrossel-animes .image {
+  position: relative;
+  display: flex;
+  background-size: 100% 100%;
+  max-width: 300px;
+  height: 376px;
+  margin-right: 5px;
+}
+
+.carrossel-animes p{
+  font-family: Impact, fantasy;
+  font-size: 20px;
+  margin-top: 5px;
+  z-index: 5;
+}
+
+.construcao .container{
+position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 500px;
+height: 300px;
+border: solid 1px;
+top: 100px;
+}
+
+.construcao .container img{
+width:128px;
+height: auto;
+}
